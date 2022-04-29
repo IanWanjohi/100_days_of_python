@@ -27,3 +27,43 @@ for key in programming_dictionary:
   print(key)
   print(programming_dictionary[key])
 
+# Nesting List in Dictionary
+
+
+travel_log = {
+  "France": ["Paris", "Marseille", "Rennes", "Dijon", "Lille", "Lyon"],
+  "Germany":["Berlin", "Hamburg", "Stutgart", "Hannover", "Dortmund", "Schalke"],         ## KEY (Word) : VALUE (List)
+}
+
+
+# Nesting Dictionary in Dictionary
+travel_log = {
+  "France": {
+    "cities_visited":["Paris", "Marseille", "Rennes", "Dijon", "Lille", "Lyon"], 
+    "total_visits": 10,
+  },
+                          ## DICTIONARY = { KEY (Word) : VALUE (Dictionary{}) }
+  "Germany": {
+    "cities_visited":["Berlin", "Hamburg", "Stutgart", "Hannover", "Dortmund", "Schalke"],
+    "total_visits": 10,
+  },
+  
+}
+
+
+# Nesting Dictionary in a List
+travel_log = [
+  {
+    "Country": "France",
+    "cities_visited":["Paris", "Marseille", "Rennes", "Dijon", "Lille", "Lyon"],     
+  
+    "total_visits": 10,
+  },
+                      ##   LIST = [ Dictionary{key: value} , Ditionary{key: value} ]
+  {
+    "Country": "Germany",
+    "cities_visited":["Berlin", "Hamburg", "Stutgart", "Hannover", "Dortmund", "Schalke"],
+    "total_visits": 10,
+  },
+  
+]
